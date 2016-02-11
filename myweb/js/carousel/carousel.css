@@ -1,0 +1,107 @@
+.container{
+	width:320px;
+	height:150px;
+	margin:50px auto;
+}
+.box{
+	width:220px;
+	height:150px;
+	overflow:hidden;
+	float:left;
+	border:1px solid #ccc;
+}
+.boximg{
+	width:220px;
+	height:150px;
+	float:left;
+	display:none;
+}
+.pre{
+	width:20px;
+	height:150px;
+	background-image:url("carouselimgs/pre.jpg");
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	cursor:pointer;
+	margin-right:15px;
+}
+.next{
+	width:20px;
+	height:150px;
+	background-image:url("carouselimgs/next.jpg");
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	cursor:pointer;
+	margin-left:15px;
+}
+@keyframes show{
+	0%{
+		display:block;
+		opacity:0.1;
+	}
+	50%{
+		display:block;
+		opacity:0.5;
+	}
+	100%{
+		display:block;
+		opacity:1;
+	}
+}
+.show{
+	width:220px;
+	height:158px;
+	float:left;
+	animation:show 1s;
+	display:block;
+}
+.container2{
+	width:968px;
+	height:150px;
+	margin:20px auto;
+}
+.box2{
+	width:896px;
+	height:156px;
+	overflow:hidden;
+	float:left;
+	border:1px solid #ccc;
+}
+.boximg2{
+	width:220px;
+	height:150px;
+	float:left;
+	display:none;
+}
+.show2{
+	width:220px;
+	height:158px;
+	padding:3px 2px;
+	float:left;
+	animation:show 1s;
+	display:block;
+}
+.return{
+	bottom:50px;
+	right:50px;
+	position:fixed;
+	width:60px;
+	height:60px;
+	background-color:#ccc;
+	opacity:0.8;
+	color:green;
+	font-size:12px;
+	font-family:微软雅黑;
+	text-align:center;
+	line-height:60px;
+	border-radius:50%;
+}
+.return:hover{
+	opacity:1;
+}
+a{
+	color:green;
+	text-decoration:none;
+}

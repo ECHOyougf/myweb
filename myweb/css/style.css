@@ -1,0 +1,236 @@
+.main{
+	margin:50px auto;
+	font:微软雅黑;
+	font-size:12px;
+}
+.bookinfo>p{
+	font-size:14px;
+	color:#000;
+}
+.row{
+	margin:20px;
+	padding:10px;
+}
+.row img{
+	width:200px;
+	height:200px;
+	border:1px solid #ccc;
+	box-shadow:0px 0px 5px #ccc;
+	margin-bottom:40px;
+}
+.row p{
+	text-align:center;
+	width:100%;
+}
+.codebox,.codebox2{
+	text-align:center;
+	line-height:100px;
+	font-size:14px;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	float:left;
+	margin:10px;
+	opacity:0.7;
+	box-shadow:0 0 10px #ccc,0 0 40px #000 inset;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.codebox{
+	animation:breath 3s infinite;
+	-webkit-animation:breath 3s infinite;
+	-ms-animation:breath 3s infinite;
+	-o-animation:breath 3s infinite;
+	-moz-animation:breath 3s infinite;
+	animation-direction:alternate;
+	-webkit-animation-direction:alternate;
+	-moz-animation-direction:alternate;
+	-ms-animation-direction:alternate;
+	-o-animation-direction:alternate;
+	transition:3s all;
+}
+@keyframes breath{
+	0%{
+		box-shadow:0 0 1px #ccc,0 0 40px #000 inset;
+		opacity:0.5;
+	}
+	100%{
+		box-shadow:0 0 10px #ccc,0 0 40px #000 inset;
+		opacity:0.8;
+	}
+}
+.codebox:hover{
+	opacity:1;
+	animation-name:turnme;
+	animation-duration:3s;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count:1;
+}
+.codebox2{
+	animation-name:pageme;
+	animation-duration:50s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-delay:2s;
+}
+.codebox2:hover{
+	opacity:1;
+	animation-name:turnme;
+	-webkit-animation-duration:.5s;
+	-o-animation-duration:.5s;
+	-moz-animation-duration:.5s;
+	-ms-animation-duration:.5s;
+	animation-duration:.5s;
+	animation-iteration-count:1;
+}
+.boxs-container{
+	margin:10% auto;
+	width:50%;
+}
+.bgcolor-greenYellow{
+	background-color:#ADFF2F;
+}
+.bgcolor-mediumSeaGreen{
+	background-color:#3CB371;
+}
+.bgcolor-mediumOrchid{
+	background-color:#BA55D3;
+}
+.bgcolor-tomato{
+	background-color:#FF6347;
+}
+.bgcolor-paleGreen{
+	background-color:#98FB98;
+}
+.bgcolor-yellow{
+	background-color:yellow;
+}
+.bgcolor-aquamarine{
+	background-color:#7FFFD4;
+}
+.bgcolor-aliceBlue{
+	background-color:#F0F8FF;
+}
+.bgcolor-orange{
+	background-color:orange;
+}
+.bgcolor-orangeRed{
+	background-color:#FF4500;
+}
+.bgcolor-pink{
+	background-color:#FFC0CB;
+}
+.bgcolor-coral{
+	background-color:#FF7F50;
+}
+.bgcolor-forestGreen{
+	background-color:#228B22;
+}
+.bgcolor-hotPink{
+	background-color:#FF69B4;
+}
+.bgcolor-purple{
+	background-color:#800080;
+}
+.bgcolor-darkCyan{
+	background-color:#008B8B;
+}
+@keyframes turnme{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+@keyframes pageme{
+	0%{
+		transform:translateZ(0px) rotateY(0deg);
+	}
+	50%{
+		transform:translateZ(0px) rotateY(180deg);
+		opacity:0;
+	}
+	100%{
+		transform:translateZ(0px) rotateY(360deg);
+	}
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+a:visited{
+	color:black;
+	text-decoration:none;
+}
+a:hover{
+	color:black;
+	text-decoration:none;
+}
+a:active{
+	text-decoration:none;
+	color:black;
+}
+a:link{
+	text-decoration:none;
+	color:black;
+}
+.bookinfo{
+	position:absolute;
+	top:0px;
+	padding:20px;
+	width:160px;
+	height:200px;
+	line-height:30px;
+	box-shadow: 0px 3px 10px #ccc,0px 0px 30px #ccc inset;
+	border-radius:5px 5px 0px 0px;
+
+
+	transform-origin:100% 100%;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	-ms-transition: all .6s;
+	-o-transition: all .6s;
+	transition: all .6s;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	-ms-transform: rotateX(-90deg);
+	-o-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+}
+.trans-3d{
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	
+	-webkit-perspective: 4000px;
+	-moz-perspective: 4000px;
+	-ms-perspective: 4000px;
+	-o-perspective: 4000px;
+	perspective: 4000px;
+
+	opacity:0.9;
+}
+.book-imgbox{
+	width:100%;
+	height:auto;
+}
+.trans-3d:hover{
+	top:90px;
+	-webkit-transform:  rotateX(90deg);
+	-moz-transform:  rotateX(90deg);
+	-ms-transform:  rotateX(90deg);
+	-o-transform:  rotateX(90deg);
+	transform:  rotateX(90deg);
+	transition:all .5s;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	opacity:1;
+}
