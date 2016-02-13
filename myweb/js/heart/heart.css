@@ -49,11 +49,10 @@
 	}
 }
 .words{
-	width:100px;
-	height:30px;
-	position:absolute;
-	margin-left:50px;
-	margin-top:-180px;
+	width:200px;
+	height:200px;
+	margin:-250px auto;
+	color:#fff;
 	transform:rotateY(-90deg);
 	-webkit-transform:rotateY(-90deg);
 	-moz-transform:rotateY(-90deg);
@@ -67,6 +66,13 @@
 	-ms-transform:rotateY(90deg);
 	-o-transform:rotateY(90deg);
 	transition:1.5s all;
+}
+.love{
+	z-index:1000;
+	position:absolute;
+	margin-top:60px;
+	margin-left:50px;
+	width:100px;
 }
 .return{
 	bottom:50px;
