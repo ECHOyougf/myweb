@@ -49,11 +49,10 @@
 	}
 }
 .words{
-	width:100px;
-	height:30px;
-	position:absolute;
-	margin-left:50px;
-	margin-top:-180px;
+	width:200px;
+	height:200px;
+	margin:-250px auto;
+	color:#fff;
 	transform:rotateY(-90deg);
 	-webkit-transform:rotateY(-90deg);
 	-moz-transform:rotateY(-90deg);
@@ -67,4 +66,33 @@
 	-ms-transform:rotateY(90deg);
 	-o-transform:rotateY(90deg);
 	transition:1.5s all;
+}
+.love{
+	z-index:1000;
+	position:absolute;
+	margin-top:60px;
+	margin-left:50px;
+	width:100px;
+}
+.return{
+	bottom:50px;
+	right:50px;
+	position:fixed;
+	width:60px;
+	height:60px;
+	background-color:#ccc;
+	opacity:0.8;
+	color:green;
+	font-size:12px;
+	font-family:微软雅黑;
+	text-align:center;
+	line-height:60px;
+	border-radius:50%;
+}
+.return:hover{
+	opacity:1;
+}
+a{
+	color:green;
+	text-decoration:none;
 }

@@ -1,7 +1,13 @@
+/*公共样式*/
 .main{
 	margin:50px auto;
 	font:微软雅黑;
 	font-size:12px;
+}
+/*书单的样式*/
+.bookinfo>p{
+	font-size:14px;
+	color:#000;
 }
 .row{
 	margin:20px;
@@ -18,6 +24,63 @@
 	text-align:center;
 	width:100%;
 }
+.bookinfo{
+	position:absolute;
+	top:0px;
+	padding:20px;
+	width:160px;
+	height:200px;
+	line-height:30px;
+	box-shadow: 0px 3px 10px #ccc,0px 0px 30px #ccc inset;
+	border-radius:5px 5px 0px 0px;
+
+
+	transform-origin:100% 100%;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	-ms-transition: all .6s;
+	-o-transition: all .6s;
+	transition: all .6s;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	-ms-transform: rotateX(-90deg);
+	-o-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+}
+.trans-3d{
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	
+	-webkit-perspective: 4000px;
+	-moz-perspective: 4000px;
+	-ms-perspective: 4000px;
+	-o-perspective: 4000px;
+	perspective: 4000px;
+
+	opacity:0.9;
+}
+.book-imgbox{
+	width:100%;
+	height:auto;
+}
+.trans-3d:hover{
+	top:90px;
+	-webkit-transform:  rotateX(90deg);
+	-moz-transform:  rotateX(90deg);
+	-ms-transform:  rotateX(90deg);
+	-o-transform:  rotateX(90deg);
+	transform:  rotateX(90deg);
+	transition:all .5s;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	opacity:1;
+}
+/*coding的样式*/
 .codebox,.codebox2{
 	text-align:center;
 	line-height:100px;
@@ -174,62 +237,30 @@ a:link{
 	text-decoration:none;
 	color:black;
 }
-.bookinfo{
-	position:absolute;
-	top:0px;
-	padding:20px;
-	width:160px;
+/*index的样式*/
+.weChat{
+	position:fixed;
+	width:230px;
 	height:200px;
-	line-height:30px;
-	box-shadow: 0px 3px 10px #ccc,0px 0px 30px #ccc inset;
-	border-radius:5px 5px 0px 0px;
-
-
-	transform-origin:100% 100%;
-	-webkit-transition: all .6s;
-	-moz-transition: all .6s;
-	-ms-transition: all .6s;
-	-o-transition: all .6s;
-	transition: all .6s;
-	-webkit-transform: rotateX(-90deg);
-	-moz-transform: rotateX(-90deg);
-	-ms-transform: rotateX(-90deg);
-	-o-transform: rotateX(-90deg);
-	transform: rotateX(-90deg);
+	top:200px;
+	right:-215px;
 }
-.trans-3d{
-	-webkit-transform-style:preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	
-	-webkit-perspective: 4000px;
-	-moz-perspective: 4000px;
-	-ms-perspective: 4000px;
-	-o-perspective: 4000px;
-	perspective: 4000px;
-
-	opacity:0.8;
+.pullwechat{
+	width:30px;
+	height:30px;
+	margin-top:100px;
+	margin-right:-16px;
+	background-color:#1E90FF;
+	float:left;
+	z-index:10;
+	transform:rotateZ(45deg);
+	-webkit-transform:rotateZ(45deg);
+	-moz-transform:rotateZ(45deg);
+	-ms-transform:rotateZ(45deg);
+	-o-transform:rotateZ(45deg);
 }
-.trans-3d:active{
-	opacity:1;
-}
-.book-imgbox{
-	width:100%;
-	height:auto;
-}
-.trans-3d:hover{
-	top:90px;
-	-webkit-transform:  rotateX(90deg);
-	-moz-transform:  rotateX(90deg);
-	-ms-transform:  rotateX(90deg);
-	-o-transform:  rotateX(90deg);
-	transform:  rotateX(90deg);
-	transition:all .5s;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-ms-transition:all .5s;
-	-o-transition:all .5s;
-	opacity:1;
+.weChat-pic{
+	width:200px;
+	height:200px;
+	float:left;
 }

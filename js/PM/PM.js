@@ -1,7 +1,6 @@
 			//localStorage.tasks=""; //清楚列表
 			if(localStorage.tasks)
 				document.getElementById("list").innerHTML=localStorage.tasks;
-			else localStorage.tasks="";
 			
 			function addtask(){
 				var taskcontent=document.getElementById("taskcontent").value;
