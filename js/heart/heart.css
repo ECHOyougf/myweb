@@ -2,7 +2,6 @@
 	width:200px;
 	height:200px;
 	margin:50px auto;
-	-webkit-perspective:1000;
 	transform-style:preserve-3d;
 }
 .box{
@@ -39,6 +38,10 @@
 	margin-top:40px;
 	margin-left:40px;
 	transform:rotateZ(45deg);
+	-webkit-transform:rotateZ(45deg);
+	-moz-transform:rotateZ(45deg);
+	-ms-transform:rotateZ(45deg);
+	-o-transform:rotateZ(45deg);
 }
 @keyframes size{
 	0%{
