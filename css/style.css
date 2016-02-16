@@ -27,9 +27,9 @@
 .bookinfo{
 	position:absolute;
 	top:0px;
-	padding:20px;
-	width:160px;
-	height:200px;
+	padding:5%;
+	width:80%;
+	height:80%;
 	line-height:30px;
 	box-shadow: 0px 3px 10px #ccc,0px 0px 30px #ccc inset;
 	border-radius:5px 5px 0px 0px;
