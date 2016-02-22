@@ -1,6 +1,6 @@
-var oBoxs=document.getElementById("boxs").childNodes;
+var oBoxs=document.getElementById("boxs").children;
 function randomColor(){
-	var rgb=Math.floor(Math.random()*1000)%256;
+	var rgb=Math.floor(Math.random()*1000)%255;
 	return rgb;
 }
 var t=null;
@@ -10,7 +10,7 @@ function changeColor(){
 		var r=randomColor();
 		var g=randomColor();
 		var b=randomColor();
-		oBoxs[i].style="background-color:rgb("+r+","+g+","+b+")";
+		oBoxs[i].style.backgroundColor="rgb("+r+","+g+","+b+")";
 	}
 	t=setInterval("changeColor()",1000);
 }

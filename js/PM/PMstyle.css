@@ -13,6 +13,7 @@
 	border-color:#ccc;
 	border-width:1px;
 	border-bottom-style:dashed;
+	background-color:#fff;
 }
 .task input[type="checkbox"]{
 	margin-left:10px;
@@ -23,6 +24,32 @@
 }
 h3{
 	color:#1E90FF;
+	float:left;
+}
+#clearbtn{	
+	float:left;
+	margin-top:18px;
+	margin-left:20px;
+}
+#list{
+	width:400px;
+	float:left;
+}
+.div-changeTask{
+	background-color:#000;
+	opacity:0.7;
+	width:99.9%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+	z-index:1000;
+}
+.input-changeTask{
+	width:250px;
+	height:30px;
+	margin:120px 40%;
 }
 .return{
 	bottom:50px;
