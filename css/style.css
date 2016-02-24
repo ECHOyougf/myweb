@@ -10,7 +10,7 @@
 	padding:10px;
 }
 .row img{
-	width:200px;
+	width:150px;
 	height:200px;
 	border:1px solid #ccc;
 	box-shadow:0px 0px 5px #ccc;
@@ -24,12 +24,11 @@
 	position:absolute;
 	top:0px;
 	padding:5%;
-	width:85%;
-	height:80%;
+	width:150px;
+	height:200px;
 	line-height:30px;
 	box-shadow:0px 0px 30px #ccc inset;
 	border-radius:5px 5px 0px 0px;
-
 
 	transform-origin:100% 100%;
 	-webkit-transition: all .6s;
@@ -55,8 +54,6 @@
 	-ms-perspective: 4000px;
 	-o-perspective: 4000px;
 	perspective: 4000px;
-
-	opacity:0.9;
 }
 .book-imgbox{
 	width:100%;
