@@ -333,3 +333,6 @@ a:link{
 		-o-transform:scale(1.1);
 	}
 }
+.txt-center{
+	text-align:center;
+}
