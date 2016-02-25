@@ -263,6 +263,14 @@ a:link{
 	text-align:center;
 	font-family:微软雅黑;
 }
-.txt-center{
-	text-align:center;
+.txt-center {
+	text-align: center;
+}
+.vedio-size{
+	width:480px;
+	height:400px;
+	margin:200px auto;
+	box-shadow:0px 0px 30px #ccc;
+	border-radius:10px;
+	overflow:hidden;
 }

@@ -6,5 +6,7 @@ $(document).ready(function(){
 		$("#wechat").mouseleave(function(){
 			$("#wechat").animate({"right":"-215px"},1000,"swing");
 		});
-
+	//打开视频
+	$('#myModal').on('shown.bs.modal', function () {
+	})
 });
