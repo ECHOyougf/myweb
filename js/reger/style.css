@@ -1,0 +1,13 @@
+html,body{
+  width:100%;
+  height:100%;
+  background-color:#000;
+  color:#fff;
+}
+.box-dialog{
+  width:300px;
+  margin:100px auto;
+}
+.box-answer{
+  padding:15px;
+}
