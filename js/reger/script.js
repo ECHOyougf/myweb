@@ -6,6 +6,9 @@ var wordStore = [
   {"hi": "hello"},
   {"不": "为什么呢"},
   {"你是": "我是你的好朋友小正"},
+  {"唉": "一切都会好起来的"},
+  {"哎": "一切都会好起来的"},
+  {"哈": "哈哈"},
 ];
 var asker = document.getElementById("asker");
 var answer = document.getElementById("answer");
@@ -15,11 +18,14 @@ asker.onkeyup = function () {
     for (var i = 0; i < wordStore.length; i++) {
       for (var attr in wordStore[i]) {/*attr是属性，wordStore[0][attr]获取属性值*/
         var result = txt.match(attr);
+        /*if (!result ) {
+          {
+            answer.innerHTML = "啊，我现在还是只蠢萌的兔子。真是不好意思，我们聊聊别的吧，嗯？";
+          }
+        }*/
         if (result) {
           answer.innerHTML = wordStore[i][attr];
-        }/*else {
-          answer.innerHTML = "啊你说的太深奥了，我只是一只蠢萌的兔子o(╯□╰)o";
-        }*/
+        }
       }
     }
   } else {
