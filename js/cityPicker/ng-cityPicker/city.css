@@ -1,0 +1,21 @@
+.city-picker-box ul{
+    width:500px;
+    height:auto;
+    overflow: hidden;
+    padding:10px;
+    border:1px solid #ccc;
+    float: left;
+}
+.city-picker-box li{
+    float: left;
+    margin:10px;
+    font-size:14px;
+    list-style: none;
+    background-color: #d2691e;
+    font-family: 微软雅黑;
+    padding: 5px 10px;
+    color:#fff;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;;
+}

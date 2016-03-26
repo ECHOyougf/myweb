@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cityPickModule" ng-controller="cityPickerCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>地址选择器</title>
+    <link href="city.css" rel="stylesheet"/>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="angular.min.js"></script>
+</head>
+<body>
+<input ng-model="accountAddress" placeholder="请选择所在地" type="text" class="form-control" ng-focus="cityPicker()" />
+<div class="city-picker-box">
+    <ul ng-show="provinceBox">
+        <li ng-repeat="address in list" value="{{address.province}}" ng-click="getProvince(address.province,$index)">{{address.province}}</li>
+    </ul>
+    <ul ng-show="cityBox">
+        <li ng-repeat="city in citys" ng-click="getCity(city.cityName,$index)">{{city.cityName}}</li>
+    </ul>
+</div>
+<script src="city.js"></script>
+</body>
+</html>
